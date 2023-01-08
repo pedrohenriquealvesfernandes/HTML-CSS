@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"> <!--  Deixar na ordem certa -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- 50 px pela barra de rolagem -->
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a introduzir audios no HTML5</p>
+    <audio src="midia/Ice & Fire - King Canyon.mp3" controls autoplay></audio> <!-- controls é para aparecer a aba de volume e minutos do audio, autoplay é para tocar automaticamente(talvez não funcione no google)-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Ice & Fire - King Canyon.mp3" type="audio/mpeg"> <!-- Caso o audio for mp3-->
+        <source src="midia/Ice & Fire - King Canyon.ogg" type="audio/ogg"> <!-- Caso o audio for ogg-->
+        <source src="midia/Ice & Fire - King Canyon.mp3" type="audio/wav"> <!-- Caso o audio for wav(arquivo muito pesado não compensa usar)-->
+        <p> Infelizmente seu navegador não consegue reproduzir audio <a href="midia/Ice & Fire - King Canyon.mp3">Clique aqui</a> para baixar seu audio.</p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            #   =   id
+            .   =   class
+            :   =   pseudo-classe
+            ::  =   pseudo-element
+            >   =   children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /* tirar as decorações */
+            font-weight: bold;
+        }
+        a:visited{ /* Caso já tenha sido visitado */
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: rgba(255, 0, 0, 0.418);
+        }
+
+        a:active{ /*Quando for clicado */
+            color: blueviolet;
+        }
+
+        a::before{
+            content: '[⇒]';
+            color: rgba(41, 40, 38, 0.582);
+            font-weight: lighter;
+            text-decoration: none;
+        }
+
+        a::after{
+            content: ' [⇐]';
+            color: rgba(41, 40, 38, 0.582);
+            font-weight: lighter;
+            text-decoration: none;
+        }
+        
+        .especial{
+            background-color: rgba(255, 0, 0, 0.226);
+            
+        }
+        .especial::before{
+            content: '[⇒]';
+            color: rgba(41, 40, 38, 0.582);
+            font-weight: lighter;
+            text-decoration: none;
+        }
+
+        .especial::after{
+            content: '[⇐]';
+            color: rgba(41, 40, 38, 0.582);
+            font-weight: lighter;
+            text-decoration: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
