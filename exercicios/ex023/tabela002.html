@@ -7,13 +7,31 @@
     <title>Tabelas</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;           
+        }
+        
+        table{
+            width: 450px;
+            border-collapse: collapse;
+            position: relative;
         }
 
-        table{
-            width: 400px;
-            border-collapse: collapse;
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgba(177, 177, 177, 0.432);
         }
+
+        /* EFEITO ZEBRADO */
+        tbody > tr:nth-child(odd) {
+            background-color: lightblue; /* odd pode ser substituído por(2n-1)*/
+        }
+        
+        tbody > tr:nth-child(even){
+            background-color: lightyellow; /* even pode ser substituído por (2n)*/
+        }
+        /*-----------------*/
 
         td, th{
             border: 1px solid black;
@@ -22,8 +40,14 @@
         }
 
         thead, tfoot{
-            background-color: grey;
+            background-color: rgb(32, 32, 32);
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(32, 32, 32) ;
         }
 
         .num{
@@ -36,6 +60,7 @@
     <!-- 
         Anatomia das Tabelas Grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,11 +68,13 @@
             TFOOT
                 TR, TD, TH
     -->
+    
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 89px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -136,12 +163,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="col">Total de Habitantes</th>
                 <td class="num"><strong>207 750 291</strong></td>
             </tr>
         </tfoot>
 
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque laborum placeat laboriosam! Voluptatem necessitatibus libero placeat officia atque dolorem deleniti ut, maiores facilis hic minus beatae esse quaerat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, corporis? Laborum aliquid excepturi modi reiciendis ullam illum impedit. Dolores nisi consequatur mollitia provident aliquid eius neque recusandae autem reprehenderit delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a optio reprehenderit saepe neque incidunt rerum. Molestias pariatur quasi, porro, possimus voluptatibus fugiat corporis repellat aut provident similique vel esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor molestiae at excepturi, magni, minima, quis consequatur incidunt ad possimus veritatis facilis quasi sed corrupti necessitatibus voluptatibus itaque asperiores aliquid!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque laborum placeat laboriosam! Voluptatem necessitatibus libero placeat officia atque dolorem deleniti ut, maiores facilis hic minus beatae esse quaerat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, corporis? Laborum aliquid excepturi modi reiciendis ullam illum impedit. Dolores nisi consequatur mollitia provident aliquid eius neque recusandae autem reprehenderit delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a optio reprehenderit saepe neque incidunt rerum. Molestias pariatur quasi, porro, possimus voluptatibus fugiat corporis repellat aut provident similique vel esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor molestiae at excepturi, magni, minima, quis consequatur incidunt ad possimus veritatis facilis quasi sed corrupti necessitatibus voluptatibus itaque asperiores aliquid!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque laborum placeat laboriosam! Voluptatem necessitatibus libero placeat officia atque dolorem deleniti ut, maiores facilis hic minus beatae esse quaerat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, corporis? Laborum aliquid excepturi modi reiciendis ullam illum impedit. Dolores nisi consequatur mollitia provident aliquid eius neque recusandae autem reprehenderit delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a optio reprehenderit saepe neque incidunt rerum. Molestias pariatur quasi, porro, possimus voluptatibus fugiat corporis repellat aut provident similique vel esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor molestiae at excepturi, magni, minima, quis consequatur incidunt ad possimus veritatis facilis quasi sed corrupti necessitatibus voluptatibus itaque asperiores aliquid!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque laborum placeat laboriosam! Voluptatem necessitatibus libero placeat officia atque dolorem deleniti ut, maiores facilis hic minus beatae esse quaerat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, corporis? Laborum aliquid excepturi modi reiciendis ullam illum impedit. Dolores nisi consequatur mollitia provident aliquid eius neque recusandae autem reprehenderit delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a optio reprehenderit saepe neque incidunt rerum. Molestias pariatur quasi, porro, possimus voluptatibus fugiat corporis repellat aut provident similique vel esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor molestiae at excepturi, magni, minima, quis consequatur incidunt ad possimus veritatis facilis quasi sed corrupti necessitatibus voluptatibus itaque asperiores aliquid!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque laborum placeat laboriosam! Voluptatem necessitatibus libero placeat officia atque dolorem deleniti ut, maiores facilis hic minus beatae esse quaerat corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, corporis? Laborum aliquid excepturi modi reiciendis ullam illum impedit. Dolores nisi consequatur mollitia provident aliquid eius neque recusandae autem reprehenderit delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio a optio reprehenderit saepe neque incidunt rerum. Molestias pariatur quasi, porro, possimus voluptatibus fugiat corporis repellat aut provident similique vel esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor molestiae at excepturi, magni, minima, quis consequatur incidunt ad possimus veritatis facilis quasi sed corrupti necessitatibus voluptatibus itaque asperiores aliquid!</p>
 </body>
 
 
