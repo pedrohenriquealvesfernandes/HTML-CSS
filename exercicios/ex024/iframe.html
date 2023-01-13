@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{ /* A configurações prevalecem a cima das configuraçoes de HTML*/
+            width: 400px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+
+        <!-- TAMANHO PADRÃO 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500">
+            <a href="https://www.cursoemvideo.com"  target="_blank"></a>
+        </iframe>
+        Curso em Video
+    </p>
+    <p>
+        Acessando o site do GOOGLE
+
+        <iframe src="https://www.google.com.br" frameborder="0" > não funciona no iframe
+        </iframe>
+    </p>
+    <p>
+
+        O repositório do Guanaba
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" width="500" height="500">
+            <a href="https://gustavoguanabara.github.io"></a >
+        </iframe>
+    </p>
+</body>
+</html>
