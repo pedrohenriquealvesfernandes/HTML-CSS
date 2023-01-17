@@ -2,5 +2,6 @@
     "cSpell.words": [
         "Meus"
     ],
-    "cSpell.language": "en,pt,pt-BR,lorem"
+    "cSpell.language": "en,pt,pt-BR,lorem",
+    "liveServer.settings.port": 5501
 }
