@@ -37,6 +37,19 @@ h1{
     font-size: .9em;
 }
 
+h2{
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 10px;
+}
+
+h2::before{
+    content: "Versão Celular";
+    color: rgb(5, 139, 0);
+    text-shadow: 2px 2px 0px rgba(213, 250, 4, 0.548);
+}
+
 img{
     display: block;
     margin: auto;
